@@ -1,0 +1,2 @@
+# Sistema-de-inventarios
+Mercancías 
