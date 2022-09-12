@@ -1,6 +1,9 @@
 # Sistema_de_inventarios
 Mercancías 
 
+
+Trabajo Realizado por:
+
 Uberney Zapata.
 John Jairo Muñoz Ramirez.
 Estefany Rodriguez.
