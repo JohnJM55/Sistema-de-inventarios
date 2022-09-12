@@ -8,4 +8,4 @@ Uberney Zapata.
 John Jairo Muñoz Ramirez.
 Estefany Rodriguez.
 Juan de Dios Garcia Arango.
-Natalia Uribe.
+Natalia Cano Restrepo
