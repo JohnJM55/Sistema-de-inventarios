@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "inventario-UI",
+    "slug": "inventario-UI",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
