@@ -1,0 +1,30 @@
+.paginaActual {
+    font-size: 15px;
+    font-weight: bold;
+    border-left: rgb(15, 15, 15) 1px solid;
+    border-right: rgb(15, 15, 15) 1px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.buscar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.anterior {
+    margin-right: 10px;
+}
+
+.siguiente {
+    margin-left: 10px;
+
+}
+
+.tabla {
+    padding-bottom: 15px;
+}
+
+.row:hover {
+    background-color: aquamarine;
+}
