@@ -1,0 +1,15 @@
+.containerAutos {
+    display: flex; /* or inline-flex */
+    justify-content: left;
+    flex-grow: 2;
+    margin-top: 50px;
+    border-top: gray 1px solid;
+}
+
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 200px; 
+    width: 400px;
+    text-align: center;
+}
