@@ -28,3 +28,25 @@
 .row:hover {
     background-color: aquamarine;
 }
+
+.botonAgregar, .botonEditar, .botonEliminar {
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius:rgb(15, 15, 15) 2px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+
+
+.botonAgregar {
+    margin-left: 500px;
+}
+
+/*
+.botonEliminar {
+    padding-top: 50px;
+    margin: 20px;
+    border:rgb(15, 15, 15) 2px;
+}*/
