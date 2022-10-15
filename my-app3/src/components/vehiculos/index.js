@@ -64,6 +64,8 @@ function Vehiculos () {
                 || value.segmento.toUpperCase() === filtro.toUpperCase()
                 || value.color.toUpperCase() === filtro.toUpperCase()
                 || value.ano.toUpperCase() === filtro.toUpperCase()
+                || value.cantidad.toUpperCase() === filtro.toUpperCase()
+                || value.valor.toUpperCase() === filtro.toUpperCase()
             );
         } else {
             arrayAMostrar = arrayVehiculos;
@@ -91,7 +93,29 @@ function Vehiculos () {
     function siguiente() {
         const sigte = paginaActual + 1;
         setPaginaActual(sigte);
-        
+    }
+    
+    function agregar() {
+        setArrayVehiculos(arrayVehiculos.push());
+        return(
+            <form>
+                <label> Marca: </label>
+                <input type="text" value={arrayVehiculos.marca}/>
+                <label> Modelo: </label>
+                <input type="text" value={arrayVehiculos.modelo}/>
+                <label> Segmento: </label>
+                <input type="text" value={arrayVehiculos.segmento}/>
+                <label> Color: </label>
+                <input type="text" value={arrayVehiculos.color}/>
+                <label> Año: </label>
+                <input type="text" value={arrayVehiculos.ano}/>
+                <label> Cantidad: </label>
+                <input type="text" value={arrayVehiculos.cantidad}/>
+                <label> Valor: </label>
+                <input type="text" value={arrayVehiculos.valor}/>
+
+            </form>
+        )
     }
 
     return (
@@ -124,6 +148,8 @@ function Vehiculos () {
                                                 <TableCell><strong>Segmento</strong></TableCell>
                                                 <TableCell><strong>Color</strong></TableCell>
                                                 <TableCell><strong>Año</strong></TableCell>
+                                                <TableCell><strong>Cantidad</strong></TableCell>
+                                                <TableCell><strong>Valor</strong></TableCell>
                                             </TableRow>
                                         </TableHead>
                                         <TableBody>
@@ -134,6 +160,8 @@ function Vehiculos () {
                                                     <TableCell>{celda.segmento} </TableCell>
                                                     <TableCell>{celda.color} </TableCell>
                                                     <TableCell>{celda.ano} </TableCell>
+                                                    <TableCell>{celda.cantidad} </TableCell>
+                                                    <TableCell>{celda.valor} </TableCell>
                                                 </TableRow>
                                             ))}
                                         </TableBody>
@@ -147,9 +175,9 @@ function Vehiculos () {
                     )
                     } else {
                     return (
-                        <div class="card">
+                        <div className="card">
                             <p> prueba </p>
-                            <div class="container">
+                            <div className="container">
                                 {arrayVehiculosFiltrado.map((cards, index) => (
                                     <Container key={index} className="card">
                                         <h4><b>{cards.marca}</b></h4>
@@ -157,6 +185,8 @@ function Vehiculos () {
                                         <p>{cards.segmento}</p>
                                         <p>{cards.color}</p>
                                         <p>{cards.ano}</p>
+                                        <p>{cards.cantidad}</p>
+                                        <p>{cards.valor}</p>
                                     </Container>
                                 ))}
                             </div>
@@ -170,6 +200,12 @@ function Vehiculos () {
                 <button onClick={() => anterior()} disabled={paginaActual===1} className="anterior">Anterior</button>
                 <label className='paginaActual'>{paginaActual}</label>
                 <button onClick={() => siguiente()}disabled={paginaActual===5} className="siguiente">  Siguiente</button>
+            </div>
+
+            <div>
+                <button className='botonAgregar' onClick={() => agregar()}>Agregar</button>
+                <button className='botonEditar' onClick={() => limpiar()}>Editar</button>
+                <button className='botonEliminar' onClick={() => limpiar()}>Eliminar</button>
             </div>
 
         </div>
